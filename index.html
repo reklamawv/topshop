@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<script src="https://vk.com/js/api/mobile_sdk.js"  type="text/javascript"></script>
+<!-- Yandex.Market Widget -->
+<script async src="https://aflt.market.yandex.ru/widget/script/api" type="text/javascript"></script>
+<script type="text/javascript">
+    (function (w) {
+        function start() {
+            w.removeEventListener("YaMarketAffiliateLoad", start);
+            w.YaMarketAffiliate.createWidget({type:"models",
+	containerId:"marketWidget",
+	params:{clid:2751591,
+		searchCount:10,
+		searchText:"скидки и акции",
+		themeRows:5,
+		themeId:5 } });
+        }
+        w.YaMarketAffiliate
+            ? start()
+            : w.addEventListener("YaMarketAffiliateLoad", start);
+    })(window);
+</script>
+<!-- End Yandex.Market Widget -->
+
+
+<style type="text/css">
+.style1 {
+	font-size: x-large;
+}
+</style>
+</head>
+<body style='text-align:center;padding-top:50px;' id='body'>
+<script language="javascript">
+VK.init({
+  apiId: 7223908
+});
+</script>
+<div align="center">
+  	<h1>Подборка товаров:</h1>
+    
+      
+        <div style="height: 100%;">
+          <p><div id="marketWidget"></div></p>
+        </div>
+       
+</div>
+</body>
+</html>
